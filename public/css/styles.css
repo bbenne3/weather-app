@@ -86,3 +86,22 @@ footer {
   color: darkslategrey;
   font-size: 0.7em;
 }
+
+.weather-description {
+  align-items: flex-start;
+  flex-direction: row;
+  display: flex;
+}
+
+.weather-info {
+  padding: 0 16px;
+}
+
+.weather-info p {
+  margin-top: 0;
+  margin-bottom: 8px; 
+}
+
+.results {
+  margin-top: 32px;
+}

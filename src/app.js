@@ -51,6 +51,11 @@ app.get('/weather', (req, res) => {
     });
   }
   fetchWeather(address, (weather) => {
+    if (/false/.test(weather.success)) {
+      return res.status(400).json({
+        error: 'Could not retrieve weather, please check the address',
+      });
+    }
     res.json({
       forecast: weather,
       address,
