@@ -13,7 +13,6 @@
     fetch(`/weather?${params.toString()}`)
       .then((r) => r.json())
       .then(weather => {
-        console.log('weather', weather);
         if (weather.error) {
           const p = document.createElement('p');
           p.className = 'error';
