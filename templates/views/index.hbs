@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Server Learning {{title}}</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      {{>header}}
+      <form>
+        <input name="address" type="text" />
+        <button id="weather-button" type="submit">Get Weather</button>
+      </form>
+      <div class="results" />
+    </main>
+    {{>footer}}
+    {{>commonScripts}}
+    <script src="js/fetchWeather.js"></script>
+  </body>
+</html>
