@@ -8,6 +8,7 @@ const publicPath = path.join(__dirname, '../public');
 const viewsPath = path.join(__dirname, '../templates/views');
 const partialsPath = path.join(__dirname, '../templates/partials');
 
+const port = process.env.PORT || 3001;
 
 const app = express();
 
@@ -81,6 +82,6 @@ app.get('*', (req, res) => {
   });
 });
 
-app.listen(3001, () => {
+app.listen(port, () => {
   console.log('app running');
 });

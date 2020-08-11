@@ -10,7 +10,7 @@
     });
     const params = new URLSearchParams();
     params.append('address', address);
-    fetch(`http://localhost:3001/weather?${params.toString()}`)
+    fetch(`/weather?${params.toString()}`)
       .then((r) => r.json())
       .then(weather => {
         if (weather.error) {
